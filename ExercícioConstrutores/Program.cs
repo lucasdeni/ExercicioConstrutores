@@ -19,7 +19,7 @@ namespace ExercícioConstrutores
 
             Console.WriteLine("Dados do produto: " + p); // vai imprimir os dados
 
-            Console.WriteLine("Digite o número de produtos a serem adicionados no estoque: ");
+            Console.Write("Digite o número de produtos a serem adicionados no estoque: ");
             int qte = int.Parse(Console.ReadLine());
             p.AdicionarProdutos(qte); // vai adicionar os produtos da quantidade
 
@@ -30,6 +30,7 @@ namespace ExercícioConstrutores
             p.RemoverProdutos(qte); // vai remover os produtos da quantidade 
 
             Console.WriteLine("Dados atualizados: " + p); // vai imprimir os dados atualizados
+            Console.ReadKey();
         }
     }
 }
